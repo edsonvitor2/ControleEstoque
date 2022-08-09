@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="app1.js"></script>
+    <header> <h1>Controle Estoque</h1> </header>
+</head>
+    <body>
+        <main>
+        <div>
+            <h2>Produtos</h2>
+        </div>
+
+        <div id="prod">
+            <label for=""> Produto </label>
+            <input type="text" id="produto" placeholder="produto">
+        </div>
+
+        <div id="val">
+            <label for=""> Valor </label>
+            <input type="text" id="valor" placeholder="valor">
+        </div>
+            
+        <button type="button" onclick="produto.salvar()">salvar</button>
+        <button type="button" onclick="produto.cancelar()">Cancelar</button>
+        <br>
+        <br>
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>PRODUTO</th>
+                <th>VALOR</th>
+                <th>AÇÕES</th>
+            </thead>
+            <tbody id="tabela">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        </main>
+    </body>
+</html>
