@@ -18,13 +18,17 @@
             <label for=""> Produto </label>
             <input type="text" id="produto" placeholder="produto">
         </div>
+        <div id="qtn">
+            <label for=""> Quantidade </label>
+            <input type="text" id="NumeroProduto" placeholder="Quantidade">
+        </div>
 
         <div id="val">
             <label for=""> Valor </label>
             <input type="text" id="valor" placeholder="valor">
         </div>
             
-        <button type="button" onclick="produto.salvar()">salvar</button>
+        <button type="button" id="btn1" onclick="produto.salvar()">salvar</button>
         <button type="button" onclick="produto.cancelar()">Cancelar</button>
         <br>
         <br>
@@ -33,15 +37,11 @@
                 <th>ID</th>
                 <th>PRODUTO</th>
                 <th>VALOR</th>
+                <th>QUANTIDADE</th>
                 <th>AÇÕES</th>
             </thead>
             <tbody id="tabela">
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+                
             </tbody>
         </table>
         </main>

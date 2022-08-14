@@ -13,6 +13,9 @@ main{
 div#prod{
     padding: 10px;
 }
+div#qtd{
+    padding: 10px;
+}
 div#val{
     padding: 10px;
 }
