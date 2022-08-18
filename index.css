@@ -1,40 +1,23 @@
 *{
     margin: 0;
 }
-header{
+h1#titulo{
     background-color: rgba(4, 117, 0, 0.692);
+    text-align: center;
     padding: 10px;
     color: #fff;
-    text-align: center;
-}
-main{
-    padding: 30px 50px;
 }
 body{
     background-color: #c6c6c6;
 }
-div#prod{
-    padding: 10px 10px 10px 0px;
-    /*margin-left: -40px;*/
-}
-div#qtd{
-     padding: 10px 10px 10px 0px;
-}
-div#val{
-    padding: 10px 10px 10px 0px;
-}
-table{
-    border: 1px solid;
-}
-table td{
-    padding: 10px;
-    border: 1px solid;
-}
-table tH{
-    padding: 10px;
-    border: 1px solid;
-    background-color: rgba(4, 117, 0, 0.692);
-}
-.center{
+div#formulario{
+    padding: 30px 50px;
     text-align: center;
+    width: 400px;
+}
+legend{
+    text-align: left;
+}
+p{
+    margin: 15px;
 }

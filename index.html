@@ -2,48 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <script src="app1.js"></script>
-    <header> <h1>Controle Estoque</h1> </header>
+    <script src="app.js"></script>
+    <title>Login</title>
 </head>
-    <body>
-        <main>
-        <div>
-            <h2>Produtos</h2>
-        </div>
-
-        <div id="prod">
-            <label for=""> Produto </label>
-            <input type="text" id="produto" placeholder="produto">
-        </div>
-        <div id="qtn">
-            <label for=""> Quantidade </label>
-            <input type="text" id="NumeroProduto" placeholder="Quantidade">
-        </div>
-
-        <div id="val">
-            <label for=""> Valor </label>
-            <input type="text" id="valor" placeholder="valor">
-        </div>
-            
-        <button type="button" id="btn1" onclick="produto.salvar()">salvar</button>
-        <button type="button" onclick="produto.cancelar()">Cancelar</button>
-        <br>
-        <br>
-        <table>
-            <thead>
-                <th>ID</th>
-                <th>PRODUTO</th>
-                <th>VALOR</th>
-                <th>QUANTIDADE</th>
-                <th>AÇÕES</th>
-            </thead>
-            <tbody id="tabela">
-                
-            </tbody>
-        </table>
-        </main>
-    </body>
+<body>
+    <h1 id="titulo" >Controle de Estoque</h1>
+    
+    <div id="formulario">
+        <form action="" id="form_Entrada">
+            <fieldset> <legend>Entar</legend> 
+            <p> <label>Login</label> <input type="text" id="login" name="login"> </p>
+            <p> <label>Senha</label> <input type="text" id="senha" name="password"> </p>
+            <p> <button type="button" onclick="log()">Entrar</button> </p>
+            <p> <button type="button" onclick="reg()">Cadastrar</button> </p>
+            </fieldset>
+        </form>
+    </div>
+<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.2/firebase-auth-compat.js"></script>
+<script src="FireInit.js"> </script>
+</body>
 </html>

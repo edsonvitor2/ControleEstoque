@@ -111,3 +111,11 @@ class Produto{
     
 }
 var produto = new Produto();
+
+function sair(){
+    firebase.auth().signOut().then(() => {
+        window.location.href = "index.html";
+    }).catch(() => {
+        alert('Error');
+    })
+}
